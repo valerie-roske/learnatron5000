@@ -4,3 +4,5 @@
 * vagrant ssh
 * cd learnatron5000
 * bundle install
+* bundle exec rails s
+* go to localhost:3000 in a browser
