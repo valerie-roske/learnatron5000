@@ -2,7 +2,9 @@
 
 * vagrant up
 * vagrant ssh
-* cd learnatron5000
-* bundle install
+* cd /vagrant
+* bundle install --path ~/bundle
+* bundle exec rake db:create db:migrate db:test:prepare
+* bundle exec rspec
 * bundle exec rails s
 * go to localhost:3000 in a browser
