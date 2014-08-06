@@ -43,3 +43,6 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem 'librarian-puppet', '~> 1.1.2'
+gem 'puppet'
