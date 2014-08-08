@@ -43,10 +43,12 @@ end
 
 gem 'librarian-puppet', '~> 1.1.2'
 gem 'puppet'
+gem 'pg'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.2'
+end
 
-  # Use sqlite3 as the database for Active Record
-  gem 'sqlite3'
+group :production do
+  gem 'rails_12factor'
 end
