@@ -9,3 +9,11 @@
 * bundle exec rspec
 * bundle exec rails s
 * go to localhost:3000 in a browser
+
+== Heroku deploy
+
+* heroku login
+* heroku create
+* git push heroku master
+* heroku run rake db:migrate
+* heroku ps:scale web=1
