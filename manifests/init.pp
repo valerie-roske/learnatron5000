@@ -22,3 +22,10 @@ file { "/home/vagrant/bundle" :
   owner => "vagrant",
   group => "vagrant"
 }
+
+class { 'postgresql::server': }
+
+postgresql::server::db { 'mydatabasename':
+    user     => 'postgres',
+    password => postgresql_password('postgres', 'mypass'),
+}
